@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelogue</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">TravelBloom</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Enter Location">
+            <button id="search-btn">Search</button>
+            <button id="clear-btn">Reset</button>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Travelogue</h1>
+            <p>Your go-to place for discovering dream destinations. Explore the world's best beaches, temples, and countries.</p>
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/128/5969/5969020.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/128/4138/4138124.png" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Page -->
+    <section id="about" class="about-us">
+        <h1>About Travelogue</h1>
+        <p>Travelogue is a leading platform for travel recommendations, helping you find your next great adventure.</p>
+        
+        <h2>Our Team</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="John Doe">
+                <h3>John Doe</h3>
+                <p>CEO</p>
+                <p>John is passionate about travel and innovation, leading the company with a vision to explore new horizons.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Jane Smith">
+                <h3>Jane Smith</h3>
+                <p>Lead Developer</p>
+                <p>Jane is the tech guru behind our platform, ensuring smooth user experiences with cutting-edge technology.</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/150" alt="Emily Johnson">
+                <h3>Emily Johnson</h3>
+                <p>Marketing Director</p>
+                <p>Emily crafts our brand story and drives our marketing efforts to connect with travel enthusiasts worldwide.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Page -->
+    <section id="contact" class="contact-us">
+        <h1>Contact Us</h1>
+        <form id="contact-form">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Recommendation Results -->
+    <section id="results" class="recommendation-results">
+        <!-- JavaScript will populate this section with search results -->
+    </section>
+
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>
